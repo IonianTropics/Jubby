@@ -1,0 +1,19 @@
+{
+	"id": "jubby",
+	"name": "Jubby",
+  "display_name": "Jubby",  
+	"author": [
+	  "Adol",
+	   "io"
+  ],
+	"description": "Made by Adol and io <3",
+	"prefix": "jnf",
+	"main_file": "Jubby.lua",
+	"priority": 0,
+	"badge_colour": "902FC0",
+	"badge_text_colour": "C00C0C",
+	"version": "0.1.0~ALPHA",
+	"dependencies": [
+		"Steamodded (>=1.0.0~BETA-0312b)"
+	]
+}
