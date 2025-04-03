@@ -32,6 +32,7 @@ SMODS.Joker {
 
 	--[ TODO:
 	-- Make sure joker buff isn't retriggered
+	-- Make sure joker minus mult isn't retriggered
 	-- Make sure joker gets properly debuffed
 	-- Make sure this card triggers as intended
 	--]

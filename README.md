@@ -21,3 +21,10 @@ Adds the Jubby joker card, try out the mod to see what it does!
 ```sh
 git clone https://github.com/IonianTropics/Jubby.git
 ```
+
+## Playtesting
+
+ - Make sure Jubby buff isn't retriggered
+ - Make sure Jubby minus mult isn't retriggered
+ - Make sure Jubby gets properly debuffed
+ - In general, check for edge cases
