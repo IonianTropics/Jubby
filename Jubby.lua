@@ -29,10 +29,10 @@ SMODS.Joker {
 	atlas = "Jubby",
 	pos = { x = 0, y = 0 },
 	cost = 5,
+ blueprint_compat = true,
 
 	--[ TODO:
 	-- Make sure joker buff isn't retriggered
-	-- Make sure joker minus mult isn't retriggered
 	-- Make sure joker gets properly debuffed
 	-- Make sure this card triggers as intended
 	--]
