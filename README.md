@@ -25,6 +25,7 @@ git clone https://github.com/IonianTropics/Jubby.git
 ## Playtesting
 
  - [ ] Make sure Jubby buff isn't retriggered
- - [x] Make sure Jubby minus mult isn't retriggered
+ - [x] ~~Make sure Jubby minus mult isn't retriggered~~
  - [ ] Make sure Jubby gets properly debuffed
+ - [ ] Make sure blueprint compat looks correct
  - [ ] In general, check for edge cases
