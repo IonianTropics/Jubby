@@ -25,7 +25,7 @@ SMODS.Joker {
 	atlas = "Jubby",
 	pos = { x = 0, y = 0 },
 
-	config = { extra = { mult = 0,  boss_add = 6, hand_sub = 1 } },
+	config = { extra = { mult = 0,  blind_add = 6, hand_sub = 1 } },
 
 	rarity = 1, -- common
 	cost = 5,
@@ -50,7 +50,7 @@ SMODS.Joker {
 		if not context.blueprint then
 
 			if context.end_of_round and context.cardarea == G.jokers then
-				card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.boss_add
+				card.ability.extra.mult = card.ability.extra.mult + card.ability.extra.blind_add
 				return {
 					message = localize { type = 'variable', key = 'a_mult', vars = { card.ability.extra.blind_add } }
 				}
