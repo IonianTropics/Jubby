@@ -3,9 +3,9 @@
 
 
 SMODS.Atlas {
-  key = "Jubby",
-  path = "Jubby.png",
-  px = 82,
+	key = "Jubby",
+	path = "Jubby.png",
+	px = 82,
 	py = 119,
 }
 
@@ -22,22 +22,22 @@ SMODS.Joker {
 		}
 	},
 
- atlas = "Jubby",
+	atlas = "Jubby",
 	pos = { x = 0, y = 0 },
 
-	config = {  extra = { mult = 0,  boss_add = 6, hand_sub = 1 } },
+	config = { extra = { mult = 0,  boss_add = 6, hand_sub = 1 } },
 
- rarity = 1, -- common
+	rarity = 1, -- common
 	cost = 5,
- blueprint_compat = true,
+	blueprint_compat = true,
 
 	loc_vars = function(self, info_queue, card)
 		return { vars = { card.ability.extra.mult, card.ability.extra.blind_add, card.ability.extra.hand_sub } }
 	end,
 
-	--[ TODO:
-	 - fix jubby buff retrigger
-	--]
+	--[[ TODO:
+	- fix jubby buff retrigger
+	--]]
 
 	calculate = function(self, card, context)
 		if context.joker_main then
