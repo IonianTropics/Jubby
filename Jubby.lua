@@ -5,8 +5,8 @@
 SMODS.Atlas {
 	key = "Jubby",
 	path = "Jubby.png",
-	px = 71,
-	py = 95,
+	px = 69,
+	py = 93,
 }
 
 
