@@ -35,10 +35,6 @@ SMODS.Joker {
 		return { vars = { card.ability.extra.mult, card.ability.extra.blind_add, card.ability.extra.hand_sub } }
 	end,
 
-	--[[ TODO:
-	- fix jubby buff retrigger
-	--]]
-
 	calculate = function(self, card, context)
 		if context.joker_main then
 			return {
@@ -57,8 +53,9 @@ SMODS.Joker {
 			end
 
 			if context.cardarea == G.jokers and context.before then
-				if card.ability.extra.mult > 0 then
-					card.ability.extra.mult = math.max(0, card.ability.extra.mult - card.ability.extra.hand_sub)
+				local prev_mult = card.ability.extra.mult
+				card.ability.mult = math.max(0, card.ability.extra.mult - card.ability.extra.hand_sub)
+				if card.ability.extra.mult ~= prev_mult then
 					return {
 						message = localize { type = 'variable', key = 'a_mult_minus', vars = { card.ability.extra.hand_sub } },
 						colour = G.C.RED,
